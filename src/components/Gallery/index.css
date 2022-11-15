@@ -1,0 +1,55 @@
+/* Write your code here. */
+
+.gallery-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.photo-container {
+  width: 80%;
+
+  margin-top: 15px;
+}
+.image-size {
+  width: 90%;
+  min-height: 250px;
+  max-height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-size {
+    width: 100%;
+    min-height: 500px;
+  }
+}
+
+.nature-text {
+  color: #1e293b;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.photographer {
+  color: #64748b;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0px;
+  flex-wrap: wrap;
+}

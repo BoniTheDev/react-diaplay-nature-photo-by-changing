@@ -1,0 +1,16 @@
+/* Write your code here. */
+
+.thumbnail-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+.thumbnail-btn {
+  border: none;
+  padding: 5px;
+}
