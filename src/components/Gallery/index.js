@@ -79,7 +79,6 @@ const imagesList = [
 
 class Gallery extends Component {
   state = {
-    photographyList: imagesList,
     displayImage: imagesList[0].imageUrl,
     displayAlt: imagesList[0].imageAltText,
   }
@@ -92,7 +91,7 @@ class Gallery extends Component {
   }
 
   render() {
-    const {photographyList, displayImage, displayAlt} = this.state
+    const {displayImage, displayAlt} = this.state
 
     return (
       <div className="gallery-container">
@@ -103,7 +102,7 @@ class Gallery extends Component {
           <h1 className="nature-text">Nature Photography</h1>
           <p className="photographer">Nature photography by Rahul</p>
           <ul className="thumbnail-list">
-            {photographyList.map(eachImageDetails => (
+            {imagesList.map(eachImageDetails => (
               <ThumbnailItem
                 eachImageDetails={eachImageDetails}
                 key={eachImageDetails.id}
